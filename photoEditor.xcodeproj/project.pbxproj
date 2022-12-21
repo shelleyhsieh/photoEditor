@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		D92128C32949B504001A08FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92128C22949B504001A08FB /* AppDelegate.swift */; };
 		D92128C52949B504001A08FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92128C42949B504001A08FB /* SceneDelegate.swift */; };
-		D92128C72949B504001A08FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92128C62949B504001A08FB /* ViewController.swift */; };
 		D92128CA2949B504001A08FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92128C82949B504001A08FB /* Main.storyboard */; };
 		D92128CC2949B504001A08FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92128CB2949B504001A08FB /* Assets.xcassets */; };
 		D92128CF2949B504001A08FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92128CD2949B504001A08FB /* LaunchScreen.storyboard */; };
+		D92128D72949C86E001A08FB /* EditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92128D62949C86E001A08FB /* EditingViewController.swift */; };
+		D92128D92949C8AF001A08FB /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92128D82949C8AF001A08FB /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D92128BF2949B504001A08FB /* photoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92128C22949B504001A08FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D92128C42949B504001A08FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D92128C62949B504001A08FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D92128C92949B504001A08FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D92128CB2949B504001A08FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D92128CE2949B504001A08FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D92128D02949B504001A08FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92128D62949C86E001A08FB /* EditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingViewController.swift; sourceTree = SOURCE_ROOT; };
+		D92128D82949C8AF001A08FB /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,10 @@
 		D92128C12949B504001A08FB /* photoEditor */ = {
 			isa = PBXGroup;
 			children = (
+				D92128D82949C8AF001A08FB /* PickerViewController.swift */,
+				D92128D62949C86E001A08FB /* EditingViewController.swift */,
 				D92128C22949B504001A08FB /* AppDelegate.swift */,
 				D92128C42949B504001A08FB /* SceneDelegate.swift */,
-				D92128C62949B504001A08FB /* ViewController.swift */,
 				D92128C82949B504001A08FB /* Main.storyboard */,
 				D92128CB2949B504001A08FB /* Assets.xcassets */,
 				D92128CD2949B504001A08FB /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D92128C72949B504001A08FB /* ViewController.swift in Sources */,
+				D92128D92949C8AF001A08FB /* PickerViewController.swift in Sources */,
+				D92128D72949C86E001A08FB /* EditingViewController.swift in Sources */,
 				D92128C32949B504001A08FB /* AppDelegate.swift in Sources */,
 				D92128C52949B504001A08FB /* SceneDelegate.swift in Sources */,
 			);
@@ -290,6 +294,7 @@
 				DEVELOPMENT_TEAM = J79C4AJ58Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = photoEditor/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "\"相片編輯\"想要存取相片的權限";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +323,7 @@
 				DEVELOPMENT_TEAM = J79C4AJ58Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = photoEditor/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "\"相片編輯\"想要存取相片的權限";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
